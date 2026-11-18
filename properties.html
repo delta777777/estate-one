@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Properties — ESTATE ONE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">ESTATE ONE<span>.</span></a>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="properties.html" class="active">Properties</a>
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <a href="index.html#contact" class="header-button">GET IN TOUCH</a>
+    </header>
+
+    <main>
+
+        <section class="properties-hero">
+            <p class="section-label">DISCOVER YOUR NEXT HOME</p>
+            <h1>Find Your Perfect Property.</h1>
+            <p>Explore a curated collection of exceptional properties.</p>
+        </section>
+
+        <section class="properties-catalog">
+
+            <div class="catalog-heading">
+                <div>
+                    <p class="section-label">OUR COLLECTION</p>
+                    <h2>Available Properties</h2>
+                </div>
+
+                <p>Discover spaces designed for exceptional living.</p>
+            </div>
+
+            <div class="property-filters">
+
+                <div class="filter-group">
+                    <label for="location-filter">Location</label>
+                    <select id="location-filter">
+                        <option value="">All Locations</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="Miami">Miami</option>
+                        <option value="Malibu">Malibu</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="type-filter">Property Type</label>
+                    <select id="type-filter">
+                        <option value="">All Types</option>
+                        <option value="Villa">Villa</option>
+                        <option value="House">House</option>
+                        <option value="Apartment">Apartment</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="price-filter">Maximum Price</label>
+                    <select id="price-filter">
+                        <option value="">Any Price</option>
+                        <option value="1000000">$1,000,000</option>
+                        <option value="2000000">$2,000,000</option>
+                        <option value="3000000">$3,000,000</option>
+                        <option value="5000000">$5,000,000</option>
+                    </select>
+                </div>
+
+                <button id="search-properties">SEARCH</button>
+                
+<button id="reset-filters" type="button">RESET FILTERS</button>
+
+            </div>
+ 
+<div class="properties-grid">
+
+    <article class="property-card" data-location="Los Angeles" data-type="Villa" data-price="1850000">
+        <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=85" alt="Luxury modern villa">
+            <span class="property-tag">FOR SALE</span>
+        </div>
+        <div class="property-info">
+            <p class="property-location">LOS ANGELES, CA</p>
+            <h3>Modern Hillside Villa</h3>
+            <p class="property-price">$1,850,000</p>
+            <div class="property-details">
+                <span>4 Beds</span>
+                <span>3 Baths</span>
+                <span>320 m²</span>
+            </div>
+           <a href="property-details.html" class="property-link">VIEW DETAILS ↗</a>
+        </div>
+    </article>
+
+<article class="property-card" data-location="Miami" data-type="House" data-price="2400000">
+        <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Contemporary luxury residence">
+            <span class="property-tag">EXCLUSIVE</span>
+        </div>
+        <div class="property-info">
+            <p class="property-location">MIAMI, FL</p>
+            <h3>Contemporary Residence</h3>
+            <p class="property-price">$2,400,000</p>
+            <div class="property-details">
+                <span>5 Beds</span>
+                <span>4 Baths</span>
+                <span>410 m²</span>
+            </div>
+           <a href="property-contemporary-residence.html" class="property-link">VIEW DETAILS ↗</a>
+        </div>
+    </article>
+
+    <article class="property-card" data-location="Malibu" data-type="Villa" data-price="3750000">
+        <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85" alt="Coastal luxury estate">
+            <span class="property-tag">FOR SALE</span>
+        </div>
+        <div class="property-info">
+            <p class="property-location">MALIBU, CA</p>
+            <h3>Coastal Luxury Estate</h3>
+            <p class="property-price">$3,750,000</p>
+            <div class="property-details">
+                <span>6 Beds</span>
+                <span>5 Baths</span>
+                <span>520 m²</span>
+            </div>
+           <a href="property-coastal-estate.html" class="property-link">VIEW DETAILS ↗</a>
+        </div>
+    </article>
+
+<article class="property-card" data-location="Los Angeles" data-type="House" data-price="980000">
+        <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Modern architectural house">
+            <span class="property-tag">NEW</span>
+        </div>
+        <div class="property-info">
+            <p class="property-location">LOS ANGELES, CA</p>
+            <h3>Modern Architectural House</h3>
+            <p class="property-price">$980,000</p>
+            <div class="property-details">
+                <span>3 Beds</span>
+                <span>2 Baths</span>
+                <span>240 m²</span>
+            </div>
+    <a href="property-modern-house.html" class="property-link">VIEW DETAILS ↗</a>
+        </div>
+    </article>
+
+   <article class="property-card" data-location="Miami" data-type="apartment" data-price="1250000">
+        <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=900&q=85" alt="Luxury modern apartment">
+            <span class="property-tag">FOR SALE</span>
+        </div>
+        <div class="property-info">
+            <p class="property-location">MIAMI, FL</p>
+            <h3>Oceanview Luxury Apartment</h3>
+            <p class="property-price">$1,250,000</p>
+            <div class="property-details">
+                <span>2 Beds</span>
+                <span>2 Baths</span>
+                <span>180 m²</span>
+            </div>
+          <a href="property-oceanview-apartment.html" class="property-link">VIEW DETAILS ↗</a>
+        </div>
+    </article>
+
+    <article class="property-card" data-location="Malibu" data-type="Villa" data-price="4200000">
+        <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Private luxury villa">
+            <span class="property-tag">EXCLUSIVE</span>
+        </div>
+        <div class="property-info">
+            <p class="property-location">MALIBU, CA</p>
+            <h3>Private Luxury Villa</h3>
+            <p class="property-price">$4,200,000</p>
+            <div class="property-details">
+                <span>5 Beds</span>
+                <span>5 Baths</span>
+                <span>480 m²</span>
+            </div>
+            <a href="property-private-villa.html" class="property-link">VIEW DETAILS ↗</a>
+        </div>
+    </article>
+
+</div>
+
+        </section>
+  
+    </main>
+ <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <a href="#" class="footer-logo">ESTATE ONE<span>.</span></a>
+            <p>Find a Place to Call Home.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>EXPLORE</h3>
+            <a href="#">Home</a>
+            <a href="#featured">Featured Properties</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>CONTACT</h3>
+            <a href="mailto:hello@estateone.com">hello@estateone.com</a>
+            <a href="tel:+12125550148">+1 (212) 555-0148</a>
+            <p>New York, United States</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 ESTATE ONE. All Rights Reserved.</p>
+        <p>Designed for Living.</p>
+    </div>
+</footer>
+</body>
+</html>

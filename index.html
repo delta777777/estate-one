@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ESTATE ONE — Find a Place to Call Home</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html" class="logo">ESTATE <span>ONE</span></a>
+
+        <nav class="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="header-button">GET IN TOUCH ↗</a>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">EXCEPTIONAL PROPERTIES. EXTRAORDINARY LIVING.</p>
+
+                <h1>
+                    Find a Place<br>
+                    to Call <span>Home.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover exceptional properties and find a space
+                    that reflects the way you want to live.
+                </p>
+
+                <a href="#featured" class="hero-link">
+                    EXPLORE PROPERTIES <span>→</span>
+                </a>
+
+            </div>
+
+
+            <!-- SEARCH FORM -->
+            <div class="search-panel">
+
+                <div class="search-heading">
+                    <h2>Find Your Home</h2>
+                    <p>Discover a property that feels right.</p>
+                </div>
+
+                <form class="search-form">
+
+                    <div class="search-field">
+                        <label for="location">LOCATION</label>
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="Enter a city"
+                        >
+                    </div>
+
+                    <div class="search-field">
+                        <label for="property-type">PROPERTY TYPE</label>
+                        <select id="property-type">
+                            <option value="">All properties</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="villa">Villa</option>
+                        </select>
+                    </div>
+
+                    <div class="search-field">
+                        <label for="price">MAXIMUM PRICE</label>
+                        <select id="price">
+                            <option value="">Any price</option>
+                            <option value="300000">$300,000</option>
+                            <option value="500000">$500,000</option>
+                            <option value="1000000">$1,000,000</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="search-button">
+                        SEARCH →
+                    </button>
+
+                </form>
+
+            </div>
+
+            <div class="hero-note">
+                <span>01 / 03</span>
+                <span>DESIGNED FOR BETTER LIVING</span>
+            </div>
+
+        </section>
+          
+        <!-- FEATURED PROPERTIES -->
+
+        <section class="featured" id="featured">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow-dark">OUR SELECTION</p>
+                    <h2>Featured <span>Properties</span></h2>
+                    <p class="section-description">
+                        Discover exceptional homes selected for
+                        their architecture, location and character.
+                    </p>
+                </div>
+
+                <a href="properties.html" class="view-all">
+                    VIEW ALL PROPERTIES ↗
+                </a>
+
+            </div>
+
+
+            <div class="property-grid">
+
+                <!-- PROPERTY 1 -->
+
+                <article class="property-card">
+
+                    <div class="property-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85"
+                            alt="Luxury modern villa"
+                        >
+                        <span class="property-tag">FOR SALE</span>
+                    </div>
+
+                    <div class="property-info">
+
+                        <p class="property-location">
+                            LOS ANGELES, CALIFORNIA
+                        </p>
+
+                        <h3>Modern Hillside Villa</h3>
+
+                        <p class="property-price">$1,850,000</p>
+
+                        <div class="property-details">
+                            <span>4 Beds</span>
+                            <span>3 Baths</span>
+                            <span>320 m²</span>
+                        </div>
+
+                        <a href="property-details.html" class="details-button">
+                            VIEW DETAILS →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROPERTY 2 -->
+
+                <article class="property-card">
+
+                    <div class="property-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85"
+                            alt="Luxury contemporary house"
+                        >
+                        <span class="property-tag">FOR SALE</span>
+                    </div>
+
+                    <div class="property-info">
+
+                        <p class="property-location">
+                            MIAMI, FLORIDA
+                        </p>
+
+                        <h3>Contemporary Residence</h3>
+
+                        <p class="property-price">$2,400,000</p>
+
+                        <div class="property-details">
+                            <span>5 Beds</span>
+                            <span>4 Baths</span>
+                            <span>410 m²</span>
+                        </div>
+
+                        <a href="property-details.html" class="details-button">
+                            VIEW DETAILS →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROPERTY 3 -->
+
+                <article class="property-card">
+
+                    <div class="property-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=900&q=85"
+                            alt="Elegant luxury family home"
+                        >
+                        <span class="property-tag">EXCLUSIVE</span>
+                    </div>
+
+                    <div class="property-info">
+
+                        <p class="property-location">
+                            MALIBU, CALIFORNIA
+                        </p>
+
+                        <h3>Coastal Luxury Estate</h3>
+
+                        <p class="property-price">$3,750,000</p>
+
+                        <div class="property-details">
+                            <span>6 Beds</span>
+                            <span>5 Baths</span>
+                            <span>520 m²</span>
+                        </div>
+
+                        <a href="property-details.html" class="details-button">
+                            VIEW DETAILS →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+         
+        <!-- ABOUT US -->
+
+        <section class="about" id="about">
+
+            <div class="about-container">
+
+                <!-- ABOUT IMAGE -->
+
+                <div class="about-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
+                        alt="Elegant modern luxury home interior"
+                    >
+
+                    <div class="about-image-label">
+                        <span>ESTATE ONE</span>
+                        <p>SPACES THAT INSPIRE</p>
+                    </div>
+                </div>
+
+
+                <!-- ABOUT CONTENT -->
+
+                <div class="about-content">
+
+                    <p class="eyebrow-dark">WHO WE ARE</p>
+
+                    <h2>
+                        More Than<br>
+                        Just a <span>Property.</span>
+                    </h2>
+
+                    <p class="about-intro">
+                        We believe finding a home is about more
+                        than choosing an address. It is about
+                        discovering a place where your next
+                        chapter begins.
+                    </p>
+
+                    <p class="about-description">
+                        At ESTATE ONE, we bring together exceptional
+                        properties and people with a vision for
+                        better living. Our team is dedicated to
+                        providing a thoughtful, personal and
+                        seamless real estate experience.
+                    </p>
+
+                    <a href="#contact" class="about-button">
+                        DISCOVER OUR STORY →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ABOUT STATISTICS -->
+
+            <div class="about-stats">
+
+                <div class="stat-item">
+                    <h3>250<span>+</span></h3>
+                    <p>PROPERTIES SOLD</p>
+                </div>
+
+                <div class="stat-item">
+                    <h3>180<span>+</span></h3>
+                    <p>HAPPY CLIENTS</p>
+                </div>
+
+                <div class="stat-item">
+                    <h3>12</h3>
+                    <p>YEARS OF EXPERIENCE</p>
+                </div>
+
+                <div class="stat-item">
+                    <h3>15</h3>
+                    <p>LOCATIONS</p>
+                </div>
+
+            </div>
+
+        </section>
+     
+        <!-- CONTACT AN AGENT -->
+
+        <section class="contact" id="contact">
+
+            <div class="contact-container">
+
+                <!-- CONTACT INTRO -->
+
+                <div class="contact-content">
+
+                    <p class="contact-eyebrow">WE ARE HERE TO HELP</p>
+
+                    <h2>
+                        Let's Make<br>
+                        Your Next <span>Move.</span>
+                    </h2>
+
+                    <p class="contact-description">
+                        Whether you're searching for your dream home
+                        or looking for your next investment, our team
+                        is ready to guide you every step of the way.
+                    </p>
+
+                    <div class="contact-info">
+
+                        <div class="contact-info-item">
+                            <span>EMAIL</span>
+                            <a href="mailto:hello@estateone.com">
+                                hello@estateone.com
+                            </a>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <span>PHONE</span>
+                            <a href="tel:+12125550148">
+                                +1 (212) 555-0148
+                            </a>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <span>OFFICE</span>
+                            <p>New York, United States</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT FORM -->
+
+                <div class="contact-form-wrapper">
+
+                    <div class="contact-form-heading">
+                        <p>GET IN TOUCH</p>
+                        <h3>Contact an Agent</h3>
+                        <span>Fill out the form and we'll be in touch.</span>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="full-name">YOUR NAME</label>
+                                <input
+                                    type="text"
+                                    id="full-name"
+                                    placeholder="John Smith"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">EMAIL ADDRESS</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="john@example.com"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    placeholder="+1 000 000 0000"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="interest">PROPERTY INTEREST</label>
+                                <select id="interest" required>
+                                    <option value="">Select property type</option>
+                                    <option value="House">House</option>
+                                    <option value="Apartment">Apartment</option>
+                                    <option value="Villa">Villa</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="message">YOUR MESSAGE</label>
+                            <textarea
+                                id="message"
+                                rows="4"
+                                placeholder="I'm interested in viewing a property..."
+                                required
+                            ></textarea>
+                        </div>
+
+
+                        <button type="submit" class="contact-submit">
+                            SEND REQUEST →
+                        </button>
+
+                        <p class="form-message" id="form-message"></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+   
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <a href="#" class="footer-logo">ESTATE ONE<span>.</span></a>
+            <p>Find a Place to Call Home.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>EXPLORE</h3>
+            <a href="#">Home</a>
+            <a href="#featured">Featured Properties</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>CONTACT</h3>
+            <a href="mailto:hello@estateone.com">hello@estateone.com</a>
+            <a href="tel:+12125550148">+1 (212) 555-0148</a>
+            <p>New York, United States</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 ESTATE ONE. All Rights Reserved.</p>
+        <p>Designed for Living.</p>
+    </div>
+</footer>
+</body>
+</html>
+
+</body>
+</html>
